@@ -1,0 +1,77 @@
+#guideCreatorHead{
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid black;
+    margin: 10px;
+    width: 100%;
+    min-width: 50vw;
+    // min-height: 70vh;
+}
+
+.guideCreatorLabel{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 2% 0 0 0;
+}
+
+.guideCreatorHeadInput{
+    margin: 2% 0;
+    // min-height: 50%;
+}
+
+.guideCreatorHeadAddImage{
+    font-size: .7em;
+}
+
+
+.guideCreatorSection{
+    @extend #guideCreatorHead;
+    border-top: 3px solid black;
+}
+
+.addSectionButton{
+    background-color: rgb(210, 210, 210);
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+    user-select: none;
+    transition: ease-in-out .1s;
+    margin: 2% 0;
+    cursor: pointer;
+}
+.addSectionButton:hover{
+    background-color: white;
+}
+.guideSectionCreatorLabel{
+    @extend .guideCreatorLabel;
+    font-size: 1em;
+}
+.deleteSection{
+    // border: 2px solid #696969;
+    font-size: 1.5em;
+    width: 5%;
+    transition: ease-in-out 100ms;
+    text-align: center;
+}
+.deleteSection:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+#saveToolTip{
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 7px;
+}
+.backButton{
+    // border: solid black 1px;
+    margin: 1%;
+    width: 10%;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #424242;
+}

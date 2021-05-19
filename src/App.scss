@@ -1,0 +1,61 @@
+@import "./scss/common.scss";
+@import "./scss/home.scss";
+@import "./scss/guideCreator.scss";
+@import "./scss/guide.scss";
+@import "./scss/components.scss";
+@import "./scss/signin.scss";
+@import "./scss/comments.scss";
+@import "./scss/profile.scss";
+html {
+  // overflow-x: hidden;
+  background-color: $backGroundGrey;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#mainLogo {
+  // width: 100%;
+  margin: 10px;
+}
+#container {
+  // border: $mainBorder;
+  display: flex;
+  flex-direction: row;
+  // width: 90%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: $backGroundWhite;
+}
+
+#mainSidebar {
+  // border: $mainBorder;
+  min-height: 100vh;
+  width: 10%;
+  margin-right: 1%;
+  padding: 1%;
+  background-color: $backGroundDarkGrey;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+#mainContainer{
+  margin-left: 14%;
+}
+
+#searchBar{
+  // background-color: lighten($color: $backGroundGrey, $amount: 60);
+  // padding: 10px;
+  margin: 10% 0;
+  // width: 100%;
+  // border: 5px solid lighten($color: $backGroundGrey, $amount: 50);
+}
+.signOutButton{
+  position: absolute;
+  margin: 2% 0;
+  padding: 2% 0;
+  width: 85%;
+  bottom: 7%;
+}

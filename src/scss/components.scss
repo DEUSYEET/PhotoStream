@@ -1,0 +1,101 @@
+.voted {
+  //   border: 1px solid black;
+  cursor: default;
+  user-select: none;
+  font-weight: bold;
+}
+
+.guideVoteButtons {
+  display: flex;
+  flex-direction: row;
+  // border: 2px solid #696969;
+  width: 10%;
+}
+.guideUpvote {
+  width: 40%;
+}
+.up{
+  cursor: pointer;
+  padding: 5%;
+  transition: ease-in-out 70ms;
+}
+.up:hover {
+  // background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  // border-radius: 7px;
+}
+.down {
+  @extend .up
+}
+.guideDownvote {
+  @extend .guideUpvote;
+}
+
+.sidebarButton {
+  margin: 7% 0;
+  padding: 3% 0;
+  border-top: 1px solid rgba(143, 143, 143, 0);
+  border-bottom: 1px solid rgba(143, 143, 143, 0);
+}
+.sidebarButton:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  transition: ease-in-out 0.1s;
+  cursor: pointer;
+}
+
+.profileButton{
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  margin-bottom: 10%;
+  // background-color: rgba(238, 238, 238, 0.507);
+  // width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fileUpload {
+  margin: 2% 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.saveButton {
+  background-color: white;
+  font-size: 1.5em;
+  width: 50%;
+  text-align: center;
+  border-radius: 7px;
+  user-select: none;
+  transition: ease-in-out 0.1s;
+  margin: 2% 0;
+}
+.saveFileButton {
+  @extend .saveButton;
+  font-size: 1.2em;
+  margin: 0;
+  width: 20%;
+  height: inherit;
+}
+.biggerFont {
+  font-size: 2em;
+}
+.unsavedButton {
+  cursor: pointer;
+  @extend .saveButton;
+  background-color: rgb(255, 100, 100);
+  color: white;
+  font-weight: bold;
+}
+.unsavedButton:hover {
+  background-color: red;
+}
+
+.loadingGif{
+  width: 50px;
+  height: 50px;
+}

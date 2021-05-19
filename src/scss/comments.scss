@@ -1,0 +1,89 @@
+.commentBox {
+  // border: 1px solid black;
+  padding: 1%;
+  margin: 1%;
+  width: 100%;
+}
+// background-color: #696969;
+
+.comments {
+  margin: 10px 0;
+}
+.commentContainer {
+  padding: 1%;
+}
+.commentContainer:nth-child(even) {
+  $border: rgb(190, 190, 190) 1px solid;
+  border-top: $border;
+  border-bottom: $border;
+  // border: 2px solid #696969;
+}
+.commentHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15%;
+  // border: 1px solid black;
+}
+.replies {
+  border-left: 2px solid #696969;
+}
+
+.commentTextArea {
+  width: 50%;
+  height: 50px;
+}
+.commentButton {
+  background-color: white;
+  cursor: pointer;
+  width: 10%;
+  padding: 3px;
+  margin: 2px;
+  // border-radius: 7px;
+  text-align: center;
+}
+.commentAuthor {
+  font-weight: bold;
+  // margin: auto;
+}
+.commentBody {
+  // background-color: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  padding: 10px 0;
+  white-space: pre-wrap;
+}
+.deleteComment {
+  // border: 2px solid #696969;
+  width: 2%;
+  transition: ease-in-out 100ms;
+  text-align: center;
+}
+.deleteComment:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+.confirm {
+  @extend .deleteComment;
+  width: 10%;
+  user-select: none;
+}
+.replyButton {
+  cursor: pointer;
+  // border-radius: 7px;
+  width: 10%;
+  // text-align: center;
+  margin: -1.5% 0 2% -2%;
+  padding: 3px;
+  transition: ease-in-out 100ms;
+}
+.replyButton:hover {
+  background-color: white;
+}
+#board {
+  width: 90vw;
+}
+.commentInteractions {
+  display: flex;
+  flex-direction: row;
+}

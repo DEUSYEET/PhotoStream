@@ -1,0 +1,117 @@
+.profileContainer {
+  width: 85vw;
+  height: 100vh;
+  // margin: 1% 2.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#profile {
+  // border: 1px solid black;
+  width: 50%;
+  height: 90vh;
+  // margin: 1% 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .fileUpload {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.profileImage {
+  height: 50%;
+  width: 20vw;
+  height: 20vw;
+}
+.profileUsername {
+  margin: 1% 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+.profileEmail {
+  @extend .profileUsername;
+}
+.userImage {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 10px;
+}
+.profilePic {
+  // border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.chatBox {
+  // border: solid black 1px;
+  width: 45%;
+  margin: auto;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-end;
+}
+.chatBoxMessages {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  word-wrap: normal;
+  word-break: break-all;
+  // justify-content: flex-end;
+}
+.chatBoxInputBox {
+  background-color: $backGroundDarkGrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 5%;
+  width: 100%;
+  // position: absolute;
+  // bottom: 0;
+}
+.chatBoxInput {
+  width: 50%;
+}
+
+.chatMessage {
+  background-color: #eee;
+  color: black;
+  max-width: 45%;
+  border-radius: 5px;
+  margin: 2.5%;
+  padding: 0.5%;
+}
+
+.self {
+  background-color: green;
+  color: white;
+  margin-left: 47.5%;
+}
+
+.messageUsername{
+    font-weight: bold;
+}
+
+#usersPage{
+  min-height: 100vh;
+  padding: 5vh 0;
+}
+.userPreview{
+  // border: 1px solid black;
+  width: 80vw;
+  padding: 1% 0;
+}
+.userPreview:nth-child(even){
+  background-color: #69696915;
+}
+.userSearch{
+  margin: 1% 0;
+  width: 40%;
+}

@@ -1,0 +1,74 @@
+@import "./common.scss";
+
+#homePage {
+  // border: $mainBorder;
+  width: 100%;
+  min-width: 85vw;
+  margin: auto;
+}
+#homeGuideContainer {
+  // border: $mainBorder;
+  width: 100%;
+}
+
+#homeTitle {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+$previewImgSize: 1.7;
+
+.guidePreview {
+  // border: $mainBorder;
+  height: 30%;
+  min-height: 20vh;
+  width: 100%;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  margin: 20px 0;
+  background-color: lighten($color: $backGroundGrey, $amount: 60);
+  border-radius: 3px;
+}
+
+//   .guidePreviewImgBox{
+//     // border: $mainBorder;
+//     // height: 20vh;
+//     // width: 30vw;
+//   }
+.guidePreviewImg {
+  overflow: hidden;
+  width: 16vw * $previewImgSize;
+  height: 9vw * $previewImgSize;
+}
+.guidePreviewTitle {
+  // border: $mainBorder;
+  width: 100%;
+  padding: 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.guidePreviewAuthor {
+  @extend .guidePreviewTitle;
+  font-size: 1em;
+}
+
+.guidePreviewDesc {
+  // border: $mainBorder;
+  width: 95%;
+  margin: 10px;
+  height: 10vh;
+  //   white-space: initial;
+  overflow: auto;
+  //   text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.guidePreviewScore {
+  align-self: flex-end;
+  margin-top: 10px;
+  margin: 10px;
+  user-select: none;
+}
